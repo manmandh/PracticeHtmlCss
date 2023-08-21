@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recipes</title>
+</head>
+<!-- <style>
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	body{
+		font-family: 'Roboto', sans-serif; 
+	}
+	.container{
+		width: 1000px;
+		margin: 0 auto;
+		display: flex;
+	}
+	.box1{
+        padding: 10px;
+        background: orange;
+        width: 300px;
+        margin-bottom: 10px;
+        }
+    .box2{
+        padding: 10px;
+        background: orange;
+        width: 300px;
+        margin-bottom: 10px;
+        }
+    .box3{
+        padding: 10px;
+        background: orange;
+        width: 300px;
+        margin-bottom: 10px;
+        }
+    .post-tittle {
+		display: block;
+		margin-bottom: 20px;
+		text-decoration: none;
+		}
+	.post-thumb img {
+		max-width: 50%;
+
+		}
+	.clear-both{
+		clear: both;
+		}
+	.clear{
+		display: flex;
+	}
+	.post-desc{
+		padding-left: 10px;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="left">
+			<div class="box1">
+             	<h1>Article Title</h1>
+             	<img src="../IMG/h3.jpg" width="100%" >
+				<p>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sapiente nemo officiis minus, dolores doloremque veritatis unde, qui ut, iusto tempora totam asperiores? Quasi, unde, nam? Pariatur praesentium cum non.</span>
+					<span>Repellendus consequatur soluta ea, veritatis. Minima, fugiat modi laborum aliquam maxime dicta aperiam quae itaque minus nihil ut rerum quisquam reprehenderit ipsum reiciendis repellat dolorum non nesciunt consequatur error quibusdam.</span>
+					<span>Atque aut fugiat totam necessitatibus architecto voluptate ea quisquam incidunt. Tempora unde perspiciatis at, autem totam repellendus, enim est aperiam doloribus, libero culpa delectus aspernatur? Nam nesciunt enim recusandae temporibus.</span>
+					<span>Deserunt, ratione, eveniet laborum ad quisquam rerum animi quidem inventore necessitatibus, ducimus impedit unde cumque ut neque repellendus modi magni nobis quibusdam quasi optio suscipit aperiam officia labore voluptas. Numquam?</span>
+				</p>
+	    	</div>
+		</div>
+
+		<div class="middle">
+			<div class="box2">
+            	<h1>Lastest Recipes</h1>
+            	<img src="../IMG/h3.jpg" width="100%" >
+	    	</div>
+		</div>
+		<div class="right">
+			<div class="box3">
+            	<h1>Popular recipes</h1>
+            	<article class="clear">
+					<a href="" class="post-thumb">
+					<img src="../IMG/bg-gg.jpg"></a>
+					<p class="post-desc">
+					Lorem, ipsum dolor sit amet consectetur, adipisicing elit. 
+					</p>
+					<div class="clear-both">
+				</article >
+				<article class="clear">
+					<a href="" class="post-thumb">
+					<img src="../IMG/bg-gg.jpg"></a>
+					<p class="post-desc">
+					Lorem, ipsum dolor sit amet consectetur, adipisicing elit. 
+					</p>
+					<div class="clear-both">
+				</article >
+				<article class="clear">
+					<a href="" class="post-thumb">
+					<img src="../IMG/bg-gg.jpg"></a>
+					<p class="post-desc">
+					Lorem, ipsum dolor sit amet consectetur, adipisicing elit. 
+					</p>
+					<div class="clear-both">
+				</article >
+				<article class="clear">
+					<a href="" class="post-thumb">
+					<img src="../IMG/bg-gg.jpg"></a>
+					<p class="post-desc">
+					Lorem, ipsum dolor sit amet consectetur, adipisicing elit. 
+					</p>
+					<div class="clear-both">
+				</article >
+	   		</div>
+		</div>
+	</div>
+	
+</body>
+</html> -->
+<style>
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	body{
+		font-family: 'Roboto', sans-serif; 
+	}
+	.container{
+		width: 1500px;
+		margin: 0 auto;
+		background-color:  white;
+		display: flex;
+	    }
+	.flex-item{
+	    background-color: orange;
+	    padding: 30px;
+	    width: 400px;
+	    margin: 50px;
+	    font-size: 18px;
+	    color: #fff;
+	    margin-bottom: 5px;
+	    display: flex;
+	    }
+	.item-1{
+	    	order: 1;
+        }
+    .item-3{
+        	order: 2;
+        }
+   	.item-2{
+        	order: -1;
+        }
+        .bg-bot-tail{
+        	display: flex;
+        }
+</style>
+<body>
+	<div class="container">
+		<div class="flex-item item-2">
+			<p>Article Title</p>
+			<img style="max-width: 10%" src="../IMG/bg-bot-tail.gif">
+			<p>20.01.2011</p>
+		</div>
+
+		<div class="flex-item item-1">
+			<p>Lastest Recipes</p>
+			<img src="../IMG/bg-bot-tail.gif">
+			<p>20.01.2011</p>
+		</div>
+
+		<div class="flex-item item-3">
+			<p>Popular Recipes</p>
+			<img src="../IMG/bg-bot-tail.gif">
+			<p>20.01.2011</p>	
+		</div>
+	</div>
+</body>
+</html>

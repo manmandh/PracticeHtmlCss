@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Color Table</title>
+</head>
+<body>
+	<style>
+		*{
+			margin: 0;
+			padding: 15;
+			box-sizing: border-box;
+		}
+		.main {
+            width: 37%;
+            background-color: rgb(220, 215, 215);
+            margin: 0 auto; 
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 100px);
+            height: 625px;
+        }
+        .block {
+            width: 100px;
+            height: 100px;
+            margin: 7px auto;
+            margin-bottom: 10px;
+            padding:5 5 5 15;
+        }
+
+        .black-color {
+            width: 105%;
+            height: 70%;
+            background-color: black;
+        }
+
+        .black-content {
+            text-align: center;
+        }
+        .grey-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(105, 108, 108);
+        }
+
+        .grey-content {
+            text-align: center;
+        }
+
+        .red-bold-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(165, 36, 6);
+        }
+
+        .red-bold-content {
+            text-align: center;
+        }
+
+        .brow-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(90, 46, 36);
+        }
+
+        .brow-content {
+            text-align: center;
+        }
+
+        .red-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(238, 23, 23);
+        }
+
+        .red-content {
+            text-align: center;
+        }
+
+        .oranged-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(232, 80, 24);
+        }
+
+        .oranged-content {
+            text-align: center;
+        }
+
+        .tangerine-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(248, 173, 10);
+        }
+
+        .tangerine-content {
+            text-align: center;
+        }
+
+        .yellow-color {
+            width: 105%;
+            height: 70%;
+            background-color: yellow;
+        }
+
+        .yellow-content {
+            text-align: center;
+        }
+
+        .gold-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(255, 255, 116);
+        }
+
+        .gold-content {
+            text-align: center;
+        }
+
+        .yellow-lemon-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(215, 250, 109);
+        }
+
+        .yellow-lemon-content {
+            text-align: center;
+        }
+
+        .bold-green-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(7, 174, 32);
+        }
+
+        .bold-green-content {
+            text-align: center;
+        }
+
+        .light-green-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(125, 206, 5);
+        }
+
+        .light-green-content {
+            text-align: center;
+        }
+
+        .banana-green-color {
+            width: 105%;
+            height: 65%;
+            background-color: rgb(156, 255, 7);
+        }
+
+        .banana-green-content {
+            text-align: center;
+        }
+        
+        .cyan-color {
+            width: 105%;
+            height: 65%;
+            background-color: cyan;
+        }
+
+        .cyan-content {
+            text-align: center;
+        }
+
+        .sky-color {
+            width: 105%;
+            height: 65%;
+            background-color: rgb(51, 136, 188);
+        }
+
+        .sky-content {
+            text-align: center;
+        }
+        
+        .sea-color {
+            width: 105%;
+            height: 65%;
+            background-color: rgb(3, 28, 250);
+        }
+
+        .sea-content {
+            text-align: center;
+        }
+        
+        .purple-blue-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(118, 5, 217);
+        }
+
+        .purple-blue-content {
+            text-align: center;
+        }
+        
+        .purple-color {
+            width: 105%;
+            height: 70%;
+            background-color: purple;
+        }
+
+        .purple-content {
+            text-align: center;
+        }
+        
+        .bold-pink-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(199, 9, 120);
+        }
+
+        .bold-pink-content {
+            text-align: center;
+        }
+        
+        .light-pink-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(237, 112, 185);
+        }
+
+        .light-pink-content {
+            text-align: center;
+        }
+        
+        .glass-blue-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(72, 101, 215);
+        }
+
+        .glass-blue-content {
+            text-align: center;
+        }
+        
+        .laurel-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(84, 111, 50);
+        }
+
+        .laurel-content {
+            text-align: center;
+        }
+        
+        .light-grey-color {
+            width: 105%;
+            height: 70%;
+            background-color: rgb(177, 179, 175);
+        }
+
+        .light-grey-content {
+            text-align: center;
+        }
+        
+        .white-color {
+            width: 105%;
+            height: 70%;
+            background-color: white;
+        }
+
+        .white-content {
+            text-align: center;
+        }
+	</style>
+    <div class="main">
+        <div class="block">
+            <div class="black-color"></div>
+            <div class="black-content">Đen</div>
+        </div>
+        <div class="block">
+            <div class="grey-color"></div>
+            <div class="grey-content">Ghi đá</div>
+        </div>
+        <div class="block">
+            <div class="red-bold-color"></div>
+            <div class="red-bold-content">Đỏ đun</div>
+        </div>
+        <div class="block">
+            <div class="brow-color"></div>
+            <div class="brow-content">Nâu</div>
+        </div>
+        <div class="block">
+            <div class="red-color"></div>
+            <div class="red-content">Đỏ cờ</div>
+        </div>
+        <div class="block">
+            <div class="oranged-color"></div>
+            <div class="oranged-content">Cam</div>
+        </div>
+        <div class="block">
+            <div class="tangerine-color"></div>
+            <div class="tangerine-content">Vàng đất</div>
+        </div>
+        <div class="block">
+            <div class="yellow-color"></div>
+            <div class="yellow-content">Vàng tươi</div>
+        </div>
+        <div class="block">
+            <div class="gold-color"></div>
+            <div class="gold-content">Vàng mơ</div>
+        </div>
+        <div class="block">
+            <div class="yellow-lemon-color"></div>
+            <div class="yellow-lemon-content">Vàng chanh</div>
+        </div>
+        <div class="block">
+            <div class="bold-green-color"></div>
+            <div class="bold-green-content">Xanh lá đậm</div>
+        </div>
+        <div class="block">
+            <div class="light-green-color"></div>
+            <div class="light-green-content">Xanh lá nhạt</div>
+        </div>
+        <div class="block">
+            <div class="banana-green-color"></div>
+            <div class="banana-green-content">Xanh nõn chuối</div>
+        </div>
+        <div class="block">
+            <div class="cyan-color"></div>
+            <div class="cyan-content">Xanh lam</div>
+        </div>
+        <div class="block">
+            <div class="sky-color"></div>
+            <div class="sky-content">Xanh coban</div>
+        </div>
+        <div class="block">
+            <div class="sea-color"></div>
+            <div class="sea-content">Xanh nước biển</div>
+        </div>
+        <div class="block">
+            <div class="purple-blue-color"></div>
+            <div class="purple-blue-content">Xanh tím</div>
+        </div>
+        <div class="block">
+            <div class="purple-color"></div>
+            <div class="purple-content">Tím</div>
+        </div>
+        <div class="block">
+            <div class="bold-pink-color"></div>
+            <div class="bold-pink-content">Hồng đậm</div>
+        </div>
+        <div class="block">
+            <div class="light-pink-color"></div>
+            <div class="light-pink-content">Hồng phấn</div>
+        </div>
+        <div class="block">
+            <div class="glass-blue-color"></div>
+            <div class="glass-blue-content">Xanh ngọc</div>
+        </div>
+        <div class="block">
+            <div class="laurel-color"></div>
+            <div class="laurel-content">Xanh rêu</div>
+        </div>
+        <div class="block">
+            <div class="light-grey-color"></div>
+            <div class="light-grey-content">Ghi sáng</div>
+        </div>
+        <div class="block">
+            <div class="white-color"></div>
+            <div class="white-content">Trắng</div>
+        </div>
+    </div>
+</body>
+</html>
